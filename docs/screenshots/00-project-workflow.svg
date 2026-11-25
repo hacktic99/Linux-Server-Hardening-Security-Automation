@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="360" viewBox="0 0 1120 360" role="img" aria-labelledby="t d">
+<title id="t">Linux hardening project workflow</title><desc id="d">Illustrative workflow: assess, plan, back up, implement, validate, document, review.</desc>
+<rect width="1120" height="360" rx="18" fill="#101827"/>
+<text x="48" y="58" fill="#f4f7fb" font-family="Arial,sans-serif" font-size="27" font-weight="700">Linux Server Hardening – project workflow</text>
+<text x="48" y="88" fill="#9fb1c8" font-family="Arial,sans-serif" font-size="15">Documentation-led lab process • validate each stage before progressing</text>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<g><rect x="42" y="145" width="130" height="92" rx="12" fill="#1e3a5f" stroke="#6fa8dc"/><text x="107" y="182" fill="#fff" font-size="17" font-weight="700">01 Assess</text><text x="107" y="207" fill="#c9d8e9" font-size="12">Baseline host</text></g>
+<path d="M174 191h22m-7 -7 7 7 -7 7" stroke="#91a9c5" stroke-width="3" fill="none"/>
+<g><rect x="201" y="145" width="130" height="92" rx="12" fill="#1e3a5f" stroke="#6fa8dc"/><text x="266" y="182" fill="#fff" font-size="17" font-weight="700">02 Plan</text><text x="266" y="207" fill="#c9d8e9" font-size="12">Scope &amp; approve</text></g>
+<path d="M333 191h22m-7 -7 7 7 -7 7" stroke="#91a9c5" stroke-width="3" fill="none"/>
+<g><rect x="360" y="145" width="130" height="92" rx="12" fill="#1e3a5f" stroke="#6fa8dc"/><text x="425" y="182" fill="#fff" font-size="17" font-weight="700">03 Back up</text><text x="425" y="207" fill="#c9d8e9" font-size="12">Recovery ready</text></g>
+<path d="M492 191h22m-7 -7 7 7 -7 7" stroke="#91a9c5" stroke-width="3" fill="none"/>
+<g><rect x="519" y="145" width="130" height="92" rx="12" fill="#1e3a5f" stroke="#6fa8dc"/><text x="584" y="182" fill="#fff" font-size="17" font-weight="700">04 Implement</text><text x="584" y="207" fill="#c9d8e9" font-size="12">One control at a time</text></g>
+<path d="M651 191h22m-7 -7 7 7 -7 7" stroke="#91a9c5" stroke-width="3" fill="none"/>
+<g><rect x="678" y="145" width="130" height="92" rx="12" fill="#1e3a5f" stroke="#6fa8dc"/><text x="743" y="182" fill="#fff" font-size="17" font-weight="700">05 Validate</text><text x="743" y="207" fill="#c9d8e9" font-size="12">Functional tests</text></g>
+<path d="M810 191h22m-7 -7 7 7 -7 7" stroke="#91a9c5" stroke-width="3" fill="none"/>
+<g><rect x="837" y="145" width="112" height="92" rx="12" fill="#1e3a5f" stroke="#6fa8dc"/><text x="893" y="182" fill="#fff" font-size="17" font-weight="700">06 Record</text><text x="893" y="207" fill="#c9d8e9" font-size="12">Evidence</text></g>
+<path d="M951 191h22m-7 -7 7 7 -7 7" stroke="#91a9c5" stroke-width="3" fill="none"/>
+<g><rect x="978" y="145" width="112" height="92" rx="12" fill="#194d45" stroke="#63c6a7"/><text x="1034" y="182" fill="#fff" font-size="17" font-weight="700">07 Review</text><text x="1034" y="207" fill="#c9eee1" font-size="12">Close or remediate</text></g></g>
+<text x="48" y="300" fill="#f6c66b" font-family="Arial,sans-serif" font-size="14" font-weight="700">STOP GATE</text><text x="138" y="300" fill="#d6e0ec" font-family="Arial,sans-serif" font-size="14">If validation fails, stop, preserve logs, and follow documented rollback.</text>
+<text x="48" y="330" fill="#8294aa" font-family="Arial,sans-serif" font-size="11">Illustrative project diagram – not a screenshot of a live environment.</text></svg>

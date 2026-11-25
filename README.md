@@ -1,92 +1,41 @@
-# Linux-Server-Hardening-Security-Automation
-This project demonstrates practical Linux security administration and automation using Bash scripting and Red Hat Enterprise Linux.
-
 # Linux Server Hardening & Security Automation
 
-## Overview
+A practical, evidence-led Linux security hardening lab focused on Red Hat Enterprise Linux (RHEL), Bash-based administration, and repeatable operational controls.
 
-This project demonstrates practical Linux security administration and automation using Bash scripting and Red Hat Enterprise Linux.
+![Project workflow](docs/screenshots/00-project-workflow.svg)
 
-The objective is to develop a reusable security hardening framework that helps administrators improve Linux server security, reduce vulnerabilities and maintain consistent security configurations.
+> **Repository status:** This is currently a documentation and lab-runbook project. The procedures are tutorials and manual verification steps. Executable hardening scripts and production-ready configurations are future work, not existing capabilities.
 
 ## Objectives
+- Establish a repeatable baseline security assessment.
+- Harden SSH remote administration without creating an avoidable lockout.
+- Reduce unnecessary inbound network exposure with Firewalld.
+- Assess and apply security updates through controlled change management.
+- Review users, privileged groups, and sudo permissions.
+- Monitor selected security-sensitive changes with auditd.
+- Produce verifiable evidence, an assessment report, and remediation actions.
 
-- Automate Linux security configuration.
-- Implement SSH security best practices.
-- Configure firewall rules using Firewalld.
-- Identify missing security patches.
-- Audit user accounts and privileged access.
-- Monitor important system configuration changes.
-- Generate security compliance reports.
+## Start here
+- [Documentation index](docs/README.md)
+- [Project charter and objectives](docs/project-charter.md)
+- [End-to-end implementation guide](docs/implementation-guide.md)
+- [Seven detailed tutorials](docs/tutorials/README.md)
+- [Project templates](docs/templates/README.md)
 
-## Technologies
+## Platform
+RHEL 9 is the primary target; many concepts also apply to RHEL 8. Treat RHEL 7/CentOS 7 as a separate compatibility exercise. Verify commands against the exact release and local policy.
 
-- Red Hat Enterprise Linux (RHEL)
-- Bash scripting
-- OpenSSH
-- Firewalld
-- SELinux
-- Auditd
-- Linux package management (DNF/YUM)
-- Git
+## Safety
+Take a snapshot/backup, preserve console recovery, keep a working SSH session, test key access before disabling passwords, inspect active firewall zones before changes, coordinate patching/reboots with owners, and do not disable SELinux or auditd to make a test pass.
 
-## Project Components
+## Illustrative images
+The SVG assets in docs/screenshots are visual mockups, not captures from a live server and not test evidence. Replace them with genuine, redacted lab captures when executing the tutorials.
 
-### 1. SSH Hardening
-- Disable root SSH login.
-- Disable password authentication where key-based access is configured.
-- Configure SSH authentication policies.
-- Restrict permitted users.
+## References
+- [RHEL 9 security hardening](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/security_hardening/)
+- [RHEL 9 securing networks](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/securing_networks/)
+- [RHEL 9 DNF guide](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_software_with_the_dnf_tool/)
+- [NIST SP 800-123](https://csrc.nist.gov/pubs/sp/800/123/final)
+- [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks)
 
-### 2. Firewall Configuration
-- Configure Firewalld.
-- Restrict unnecessary network services.
-- Allow only approved ports and protocols.
-
-### 3. Security Patching
-- Identify missing security updates.
-- Check installed package versions.
-- Automate security patch reporting.
-
-### 4. User Account Auditing
-- Identify users with privileged access.
-- Review sudo permissions.
-- Identify inactive accounts.
-- Audit password and account policies.
-
-### 5. Security Reporting
-- Generate system security reports.
-- Record configuration changes.
-- Identify potential security weaknesses.
-
-## Repository Structure
-
-```text
-linux-server-hardening/
-├── scripts/
-│   ├── ssh-hardening.sh
-│   ├── firewall-hardening.sh
-│   ├── security-patching.sh
-│   └── user-audit.sh
-├── configs/
-│   └── sshd_config.example
-├── reports/
-├── docs/
-│   └── implementation-guide.md
-└── README.md
-```
-
-## Learning Outcomes
-
-This project provides practical experience in:
-
-- Linux system security.
-- Vulnerability management.
-- Security automation.
-- Enterprise server administration.
-- Infrastructure hardening.
-- Security auditing and compliance.
-
-## Disclaimer
-
-This project is intended for educational and laboratory purposes. Test all scripts in a non-production environment before deploying them to business-critical systems.
+Educational lab material only. It does not establish CIS, DISA STIG, ISO 27001, or other compliance.
