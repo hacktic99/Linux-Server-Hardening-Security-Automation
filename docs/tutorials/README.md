@@ -307,7 +307,7 @@ Inspect event time/ID, account, executable, path, and success status. Investigat
 2. Functionally test SSH from a second client, approved and unapproved firewall paths from relevant networks, application health, account review, and audit event retrieval.
 3. Record actual outcomes and link each to an evidence ID. Use Pass, Fail, Not tested, Not applicable, or Exception.
 4. Create findings with observation, impact, severity rationale, recommendation, owner, due date, and evidence.
-5. Complete the [assessment report](../templates/README.md) and [evidence register](../templates/README.md).
+5. Complete the [assessment report](../templates/security-assessment-report.md) and [evidence register](../templates/evidence-register.md).
 
 Example private evidence folder:
 ~~~text
